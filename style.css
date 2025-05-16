@@ -1,0 +1,1081 @@
+
+body {
+  background-image: url("pics/sabg1.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: #2f4c5d;
+  font-family: 'basiic';
+  width: 1910px; 
+  height: 920px;
+  cursor: url(https://cur.cursors-4u.net/food/foo-6/foo510.cur), auto !important; /*https://www.cursors-4u.com */
+}
+
+.cardbackground { 
+  width: 1910px;
+  height: 942px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.mail-container {
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.leftcolumn { 
+  float: left;
+  width: 15%;
+}
+.midcolumn { 
+  float: left;
+  width: 85%;
+}
+
+.rightcolumn { 
+  float: left;
+  width: 10%;
+  background-color: black;
+}
+
+.qucolumn { /* quarter column / split */   
+  float: left;
+  width: 25%;
+}
+
+.halfcolumn { 
+  float: left;
+  width: 50%;
+}
+
+thirdcolumn { /* 3/4th column / split */   
+  float: left;
+  width: 60%;
+}
+
+quarcolumn { /* 3/4th column / split */   
+  float: left;
+  width: 40%;
+  
+}
+
+.smcolumn { /* 3/4th column / split */   
+  float: left;
+  width: 20%;
+}
+
+.maincolumn { /* main section col */   
+  float: left;
+  width: 970px;
+}
+
+.sidecolumn { /* button col */   
+  float: left;
+  width: 100px;
+}
+
+.midcolumnguest { 
+  float: left;
+  width: 620px;
+}
+
+.leftcolumnguest { 
+  float: left;
+  width: 250px;
+}
+
+
+.button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  background: transparent;
+  font-family: 'basiic';
+  cursor: pointer;
+  
+}
+
+:popover {
+  bottom: 5px;
+  right: 5px;
+}
+
+#dragable {
+  position: absolute;
+  z-index: 9;
+  background-color: black;
+  text-align: center;
+  color: white;
+  border: 2px solid #020306;
+  border-radius: 5px;
+  top: 50%;
+  left: 60%;
+}
+
+#dragable.drag {
+border-color: #020306;
+box-shadow: 3px 6px 24px rgba(0, 0, 0, 0.5);
+}
+
+
+#dragable #dragzone {
+  width: 100%;
+  height: 100%;
+  cursor: move;
+  z-index: 10;
+  background-color: black;
+  font-family: 'basiic';
+  color: #2f4c5d;
+}
+
+#dragableone {
+  position: absolute;
+  z-index: 9;
+  background-color: black;
+  text-align: center;
+  color: white;
+  border: 2px solid #020306;
+  border-radius: 5px;
+  top: 60%;
+  left: 60%;
+}
+
+#dragableone.drag {
+border-color: white;
+box-shadow: 3px 6px 24px rgba(0, 0, 0, 0.5);
+}
+
+
+#dragableone #dragzoneone {
+  width: 100%;
+  height: 100%;
+  cursor: move;
+  z-index: 10;
+  background-color: black;
+  font-family: 'basiic';
+  color: #2f4c5d;
+}
+
+
+#dragabletwo {
+  position: absolute;
+  z-index: 9;
+  background-color: black;
+  text-align: center;
+  color: white;
+  border: 2px solid #020306;
+  border-radius: 5px;
+  top: 50%;
+  left: 80%;
+}
+
+#dragabletwo.drag {
+border-color: white;
+box-shadow: 3px 6px 24px rgba(0, 0, 0, 0.5);
+}
+
+
+#dragabletwo #dragzonetwo {
+  width: 100%;
+  height: 100%;
+  cursor: move;
+  z-index: 10;
+  background-color: black;
+  font-family: 'basiic';
+  color: #2f4c5d;
+}
+
+
+#dragablethree {
+  position: absolute;
+  z-index: 9;
+  background-color: black;
+  text-align: center;
+  color: white;
+  border: 2px solid #020306;
+  border-radius: 5px;
+  top: 50%;
+  left: 60%;
+}
+
+#dragablethree.drag {
+border-color: #020306;
+box-shadow: 3px 6px 24px rgba(0, 0, 0, 0.5);
+}
+
+
+#dragablethree #dragzonethree {
+  width: 100%;
+  height: 100%;
+  cursor: move;
+  z-index: 10;
+  background-color: black;
+  font-family: 'basiic';
+  color: #2f4c5d;
+}
+
+
+* {
+margin: 0;
+padding: 0;
+border: none;
+box-sizing: border-box;
+-webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+height: 100%;
+}
+
+.card { /* main box, margin is outside border, padding is inside border*/
+  padding: 5px;
+  margin: 5px;
+  border: hidden;
+  background-color: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 400px;
+  z-index: 1;
+}
+
+
+.cardggbook { /* main box, margin is outside border, padding is inside border*/
+  padding: 5px;
+  border: hidden;
+  background-color: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 400px;
+  z-index: 1;
+}
+
+.cardaccess { /* main box, margin is outside border, padding is inside border*/
+  padding: 5px;
+  margin: 5px;
+  border: 2px outset #020306;
+  border-radius: 5px;
+  background-color: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 420px;
+  height: 560px;
+  z-index: 1;
+}
+
+.webringbox { /* main box, margin is outside border, padding is inside border*/
+  padding: 5px;
+  border: hidden;
+  background-color: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  text-align: center;
+  z-index: 1;
+}
+
+.webringboxtop { /* main box, margin is outside border, padding is inside border*/
+
+  border: hidden;
+  background-color: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  text-align: center;
+  z-index: 1;
+}
+
+
+.cardlgg { /* left gif card */
+  padding: 5px;
+  border: hidden;
+  background-color: black;
+  width: 130px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  text-align: center;
+  z-index: 1;
+}
+
+.cardtgg { /* top gif card */
+  border: hidden;
+
+  overflow-y: hidden;
+  overflow-x: hidden;
+  text-align: right;
+  z-index: 1;
+}
+
+.cardtwo { /* 2nd main box */ /*margin is outside border, padding is inside border*/
+  padding: 5px;
+  margin: 5px;
+  border: hidden;
+  background-color: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 200px;
+  z-index: 1;
+}
+
+.cardthree { /* 2nd main box */ /*margin is outside border, padding is inside border*/
+  margin: 5px;
+  padding: 5px;
+  border: hidden;
+  background-color: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: auto;
+  z-index: 1;
+}
+
+.cardall { /* main content box has actual content */
+  border-radius: 5px;
+  padding-left: 5px;
+  border: 4px outset #081025;
+  background-color: black;
+  overflow-y: hidden;
+  width: 960px;
+  height: 900px;
+  z-index: 1;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.cardtime { /* main content box has actual content */
+  border-radius: 5px;
+  border: 2px outset #020306;
+  background-color: black;
+  overflow-y: hidden;
+  width: fit-content;
+  height: 20px;
+  z-index: 1;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.cardonline { /* main content box has actual content */
+  border-radius: 5px;
+  border: 2px outset #020306;
+  background-color: black;
+  overflow-y: hidden;
+  width: fit-content;
+  height: 20px;
+  z-index: 1;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+
+.cardallbuttons { /* main content box has actual content */
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  overflow-y: hidden;
+  width: 100px;
+  height: fit-content;
+  z-index: 1;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+
+
+
+.cardguest { /* guestbook greeting box */
+  border-radius: 5px;
+  padding: 5px;
+  border: 2px outset #020306;
+  background-color: black;
+  overflow-y: hidden;
+  width: 240px;
+  height: 160px;
+  z-index: 1;
+  margin-top: 15px;
+}
+
+.cardnote { /* guestbook response box */
+  background-color: transparent;
+  z-index: 1;
+  margin-right: 15px;
+}
+
+.cardguestbook { /* guestbook response box */
+  background-color: transparent;
+  width: 900px;
+  float: left;
+  z-index: 1;
+}
+
+
+.cardhm { /* hidden box inside main box w/ scroll*/
+  /*margin-top: 5px;*/
+  padding: 5px;
+  border: hidden;
+  background-color: black;
+  font-size: 16px;
+  font-family: 'basiic';
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 400px;
+  scrollbar-color: #202430black;
+  z-index: 1;
+}
+.cardhd { /* profile box*/
+  /*margin-top: 5px;*/
+  padding: 5px 5px 5px 5px; /*top right bottom left*/
+  margin: 5px 5px 5px 5px; /*top right bottom left*/
+  margin-left: 0px;
+  border: 2px dotted #020306;
+  border-radius: 5px;
+  background-color: black;
+  font-size: 14px;
+  font-family: 'basiic';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 500px;
+  z-index: 1;
+}
+
+.cardst { /* status box*/ 
+  padding: 5px;
+  margin: 2px;
+  margin-top: 12px;
+  border: 2px ridge #020306;
+  border-radius: 5px;
+  background-color: black;
+  font-size: 16px;
+  font-family: 'basiic';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 500px;
+  z-index: 1;
+}
+
+.cardsb { /* button box*/ 
+  padding: 5px 5px 5px 5px; /*top right bottom left*/
+  margin: 0px 5px 0px 5px; /*top right bottom left*/
+  border: 2px dotted #020306;
+  border-radius: 5px;
+  background-color: black;
+  font-size: 16px;
+  font-family: 'basiic';
+  height: 190px;
+  z-index: 1;
+  text-align: center;
+}
+
+.cardsch { /* schedule box*/ 
+  padding: 0px 5px 5px 5px; /*top right bottom left*/
+  margin: 0px 5px 5px 5px; /*top right bottom left*/
+  border: 2px dotted #020306;
+  border-radius: 5px;
+  background-color: black;
+  font-size: 12px;
+  font-family: 'basiic';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 130px;
+  width: 185px;
+  z-index: 1;
+}
+
+
+.cardscc { /* currently box*/ 
+  padding: 0px 5px 5px 5px; /*top right bottom left*/
+  margin: 5px 5px 5px 5px; /*top right bottom left*/
+  border: 2px ridge #020306;
+  border-radius: 5px;
+  background-color: black;
+  font-size: 14px;
+  font-family: 'basiic';
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1;
+  max-height: 120px;
+  scrollbar-color: #202430black;
+}
+
+.cardl { /* left column cards */
+  margin-bottom: 10px;
+  margin-left: 5px;
+  border: 2px solid #020306;
+  background-color: black;
+  border-radius: 0px 0px 5px 5px;
+  font-size: 16px;
+  font-family: 'basiic';
+  max-height: 800px;
+  padding: 0px 2px 2px 2px;
+  z-index: 1;
+}
+
+.cardlt { /* top left column cards */
+  margin-top: 16px;
+  margin-left: 5px;
+  padding: 5px 5px 5px 5px;
+  border-right: 2px solid #020306;
+  border-radius: 5px 5px 0px 0px;
+  background: rgb(255,161,251);
+  background: linear-gradient(90deg, rgb(29 28 39) 0%, rgb(11 33 43) 35%, rgb(0 0 0) 100%);
+  font-size: 16px;
+  font-family: 'basiic';
+  height: 24px;
+  z-index: 1;
+}
+
+.cardltop { /* very top left column card */
+  padding: 5px 5px 5px 5px;
+  margin-left: 5px;
+  border-right: 2px solid #020306;
+  border-radius: 5px 5px 0px 0px;
+  background: rgb(255,161,251);
+  background: linear-gradient(90deg, rgb(29 28 39) 0%, rgb(11 33 43) 35%, rgb(0 0 0) 100%);
+  font-size: 16px;
+  font-family: 'basiic';
+  height: 24px;
+  z-index: 1;
+}
+
+.cardlb { /* mid bottom column cards */
+  margin-bottom: 10px;
+  border: 2px solid #020306;
+  background-color: black;
+  border-radius: 0px 0px 5px 5px;
+  font-size: 16px;
+  font-family: 'basiic';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 800px;
+  padding: 5px;
+  z-index: 1;
+}
+
+.cardlwb { /* web cards */
+  border: 2px solid #020306;
+  margin-left: 5px;
+  background-color: black;
+  border-radius: 0px 0px 5px 5px;
+  font-size: 16px;
+  font-family: 'basiic';
+  overflow-y: scroll;
+  overflow-x: scroll;
+  height: 90px;
+  width: 137px;
+  scrollbar-color: #202430black;
+  z-index: 1;
+}
+
+.cardltm { /* top mid column cards */
+  margin: 5px 5px 0px 5px;
+  padding: 5px 5px 5px 5px;
+  border-right: 4px solid #020306;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #020306;
+  font-size: 16px;
+  font-family: 'basiic';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 800px;
+  z-index: 1;
+}
+
+.cardlbm { /* mid bottom column cards */
+  margin: 0px 5px 5px 5px; /*top right bottom left*/
+  border: 2px solid #020306;
+  background-color: black;
+  border-radius: 0px 0px 5px 5px;
+  font-size: 16px;
+  font-family: 'basiic';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 800px;
+  padding: 5px;
+  z-index: 1;
+}
+
+.cardwarning { /* warning card */
+  margin: 0px 5px 5px 5px; /*top right bottom left*/
+  border: 2px ridge #020306;
+  background-color: black;
+  border-radius: 5px 5px 5px 5px;
+  font-size: 12px;
+  font-family: 'basiic';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 130px;
+  padding: 0px 5px 5px 5px; /*top right bottom left*/
+  z-index: 1;
+}
+
+.cardm { /* middle base cards */
+  margin: 5px;
+  padding: 10px;
+  border: 4px dotted #020306;
+  background-color: black;
+  font-size: 16px;
+  font-family: 'basiic';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 400px;
+  z-index: 1;
+}
+
+.cardmtt { /* title card */
+  margin: 5px 5px 5px 2px; /*top right bottom left*/
+  background-color: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 400px;
+  z-index: 1;
+}
+
+.cardmgg { /* title gif card */
+  background-color: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  text-align: right;
+  max-height: 400px;
+  z-index: 1;
+}
+
+.cardmsi { /* site info card */
+  margin: 12px 5px 5px 5px; /*top right bottom left*/
+  padding: 10px;
+  border: 2px dotted #020306;
+  border-radius: 5px;
+  background-color: black;
+  font-size: 14px;
+  font-family: 'basiic';
+  height: 250px;
+  z-index: 1;
+}
+
+.cardmp { /* purpose card */
+  padding: 0px 5px 5px 5px; /*top right bottom left*/
+  margin: 0px 5px 5px 5px; /*top right bottom left*/
+  border: 2px ridge #020306;
+  border-radius: 5px;
+  background-color: black;
+  font-size: 16px;
+  font-family: 'basiic';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 190px;
+  z-index: 1;
+}
+
+.cardma { /* music card */
+  padding: 5px 5px 5px 10px; /*top right bottom left*/
+  margin: 5px 5px 5px 5px; /*top right bottom left*/
+  border-left: 4px ridge #020306;
+  background-color: black;
+  font-size: 16px;
+  font-family: 'basiic';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 400px;
+  text-align: left;
+  z-index: 1;
+}
+
+.cardmsu { /* update card */
+  margin: 0px 5px 0px 5px; /*top right bottom left*/
+  border: 2px ridge #020306;
+  border-radius: 5px 5px 5px 5px;
+  background-color: black;
+  font-size: 16px;
+  font-family: 'heartfont';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 190px;
+  z-index: 1;
+}
+
+  textarea {
+  color: #2f4c5d;
+  resize: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 2px outset #020306;
+  border-radius: 5px 5px 5px 5px;
+  background: black;
+  margin-top: 5px;
+  scrollbar-color: #202430black;
+}
+
+  buttonarea {
+  margin: 10px 5px 1px 5px; /*top right bottom left*/
+}
+
+
+#statuscafe {
+    padding: .5em;
+    background-color: black;
+    border: 1px dotted #353843;
+    margin: 5px;
+}
+#statuscafe-username {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+#statuscafe-content {
+    margin: 0px 5px 5px 5px; /*top right bottom left*/
+    font-size: 12px;
+}
+
+#scroll-container {
+  margin-left: 5px;
+  border-left: 2px solid #353843;
+  border-right: 2px solid #353843;
+  border-bottom: 2px solid #135384381b27;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 24px;
+  width: 780px;
+  background: rgb(22, 21, 32);
+  background: linear-gradient(90deg, rgb(29 28 39) 0%, rgb(11 33 43) 35%, rgb(0 0 0) 100%);
+  font-size: 20px;
+  font-family: 'basiic';
+  color: white;
+}
+
+#scroll-containertwo {
+  margin: 10px 5px 5px 5px; /*top right bottom left*/;
+  border: 4px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: black;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+ 
+ /*links*/
+a {
+    color: #2f4c5d;
+}
+
+a:visited {
+    color: #020306;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00db71;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  padding: 5px;
+  position: absolute;
+  z-index: 999999999;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -5px;
+  background-color: black;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  border: 2px dotted #020306;
+  border-radius: 5px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: fixed;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border: 5px solid transparent black transparent transparent;
+  z-index: 2;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*header*/
+h1 {
+    color: white;
+  font-family: "Audiowide", sans-serif;
+
+
+    font-size: 32px;
+    text-align: left;
+    margin: 2px 5px 5px 10px; /*top right bottom left*/
+    padding: 1px 5px 5px 10px;
+}
+
+
+h4 {
+    color: white;
+    font-family: 'Pulsewidth';
+    font-size: 32px;
+    text-align: left;
+    margin: 2px 5px 5px 10px; /*top right bottom left*/
+    padding: 1px 5px 5px 10px;
+}
+
+h2 {
+    color: white;
+    margin: 2px 2px 2px 2px; /*top right bottom left*/
+    padding: 2px 2px 2px 2px;
+    font-size: 12px;
+}
+
+h5 {
+    color: white;
+    margin: 2px 2px 2px 2px; /*top right bottom left*/
+    padding: 2px 2px 2px 2px;
+}
+
+h3 {
+    color: #2f4c5d;
+    margin: 2px 0px 2px 0px; /*top right bottom left*/
+    padding: 2px 2px 0px 2px;
+    font-size: 12px;
+} 
+
+  
+h6 {
+    color: #2f4c5d;
+    margin: 2px 0px 2px 0px; /*top right bottom left*/
+    padding: 2px 2px 0px 2px;
+} 
+
+
+p { 
+  margin: 10px 3px 10px 3px; /*top right bottom left*/
+  }
+
+
+
+
+/*music player 1*/
+.player {
+  height: 90px;
+  width: auto;
+  align-items: center;
+  background-color: black;
+  border: 2px ridge #020306;
+  border-top: none;
+  border-radius: 0px 0px 5px 5px; /*topleft topright bottomleft bottomright*/
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.playertop {
+  height: 40px;
+  width: auto;
+  align-items: center;
+  background-color: black;
+  border: 2px ridge #020306;
+  border-bottom: none;
+  border-radius: 5px 5px 0px 0px; /*topleft topright bottomleft bottomright*/
+  margin-left: 5px;
+  padding-top: 2px;
+  padding-left: 5px;
+  margin-right: 5px;
+}
+
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.track-art {
+  height: 70px;
+  width: 70px;
+  border-radius: 10px;
+}
+
+.now-playing {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.track-name {
+  font-size: 14px;
+}
+
+.track-artist {
+  font-size: 0px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.playpause-track {
+  padding: 0px 25px 5px 25px; /*top right bottom left*/
+  width: auto;
+  height: auto;
+  opacity: 0.8;
+
+  /* Smoothly transition the opacity */
+  transition: opacity .2s;
+}
+
+.prev-track {
+  padding: 0px 20px 5px 25px; /*top right bottom left*/
+  width: auto;
+  height: auto;
+  opacity: 0.8;
+
+  /* Smoothly transition the opacity */
+  transition: opacity .2s;
+}
+
+.next-track {
+  padding: 0px 20px 5px 20px; /*top right bottom left*/
+  width: auto;
+  height: auto;
+  opacity: 0.8;
+
+  /* Smoothly transition the opacity */
+  transition: opacity .2s;
+}
+
+.playpause-track:hover, .prev-track:hover, .next-track:hover {
+  opacity: 1.0;
+}
+
+.slider_container {
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 3px;
+  background: white;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.seek_slider:hover, .volume_slider:hover {
+  opacity: 1.0;
+}
+
+.seek_slider {
+  width: 50%;
+}
+
+.volume_slider {
+  width: 50%;
+}
+
+.current-time, .total-duration {
+  padding: 5px 5px 5px 5px; /*top right bottom left*/
+  font-size: 12px;
+}
+
+i.fa-volume-down, i.fa-volume-up {
+  padding: 10px;
+}
+
+i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+  cursor: pointer;
+}
+
+
+/*custom fonts*/
+
+@font-face {
+    font-family: 'virale';
+    src: url('fonts/virale.ttf');
+}
+
+@font-face {
+    font-family: 'zeroweb';
+    src: url('fonts/000webfont.ttf');
+}
+
+@font-face {
+    font-family: 'basiic';
+    src: url('fonts/basiic.ttf');
+}
+
+@font-face {
+    font-family: 'Pulsewidth';
+    src: url('fonts/Pulsewidth-1.0.0.otf');
+}
+
+@font-face {
+    font-family: 'heartfont';
+    src: url('fonts/heartfont.ttf');
+}

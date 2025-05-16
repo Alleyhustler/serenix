@@ -1,0 +1,329 @@
+
+body {
+  background-color: black;
+
+  color: #2f4c5d;
+  font-family: 'heartfont';
+  width: 170px; 
+  height: auto;
+  
+  
+  cursor: url(https://cur.cursors-4u.net/symbols/sym-7/sym634.ani), url(https://cur.cursors-4u.net/symbols/sym-7/sym634.png), auto !important; /* Start https://www.cursors-4u.com */ 
+}
+
+.card { /* main box, margin is outside border, padding is inside border*/
+  border: hidden;
+  background-color: black;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 175px;
+  width: 170px;
+  scrollbar-color: #202430black;
+  z-index: 1;
+  font-size: 16px;
+}
+
+.cardtwo { /* main box, margin is outside border, padding is inside border*/
+  border: hidden;
+  background-color: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  z-index: 1;
+  font-size: 16px;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.leftcolumn { 
+  float: left;
+  width: 15%;
+}
+.midcolumn { 
+  float: left;
+  width: 85%;
+}
+
+.rightcolumn { 
+  float: left;
+  width: 10%;
+  background-color: black;
+}
+
+.qucolumn { /* quarter column / split */   
+  float: left;
+  width: 25%;
+}
+
+.halfcolumn { 
+  float: left;
+  width: 50%;
+}
+
+thirdcolumn { /* 3/4th column / split */   
+  float: left;
+  width: 60%;
+}
+
+quarcolumn { /* 3/4th column / split */   
+  float: left;
+  width: 40%;
+  
+}
+
+.smcolumn { /* 3/4th column / split */   
+  float: left;
+  width: 20%;
+}
+ 
+ /*links*/
+a {
+    color: #2f4c5d;
+}
+
+a:visited {
+    color: #020306;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00db71;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  padding: 5px;
+  position: absolute;
+  z-index: 999999999;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -5px;
+  background-color: black;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  border: 2px dotted #020306;
+  border-radius: 5px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: fixed;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border: 5px solid transparent black transparent transparent;
+  z-index: 2;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*header*/
+h4 {
+    color: white;
+    font-family: 'Pulsewidth';
+    font-size: 32px;
+    text-align: left;
+    margin: 2px 5px 5px 10px; /*top right bottom left*/
+    padding: 2px 5px 5px 10px;
+}
+
+h5 {
+    color: white;
+    margin: 2px 2px 2px 2px; /*top right bottom left*/
+    padding: 2px 2px 2px 2px;
+}
+
+  
+h6 {
+    color: #2f4c5d;
+    margin: 2px 0px 2px 0px; /*top right bottom left*/
+    padding: 2px 2px 0px 2px;
+} 
+
+
+p { 
+  margin: 10px 3px 10px 3px; /*top right bottom left*/
+  }
+
+
+
+
+/*music player 1*/
+.player {
+  height: 90px;
+  width: auto;
+  align-items: center;
+  background-color: black;
+  border: 2px ridge #020306;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+.track-art {
+  margin: 5px 5px 5px 5px; /*top right bottom left*/
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+
+.now-playing {
+  font-size: 9px;
+}
+
+.track-name {
+  font-size: 14px;
+}
+
+.track-artist {
+  font-size: 0px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.playpause-track {
+  padding: 10px 25px 5px 25px; /*top right bottom left*/
+  width: auto;
+  height: auto;
+  opacity: 0.8;
+
+  /* Smoothly transition the opacity */
+  transition: opacity .2s;
+}
+
+.prev-track {
+  padding: 10px 20px 5px 25px; /*top right bottom left*/
+  width: auto;
+  height: auto;
+  opacity: 0.8;
+
+  /* Smoothly transition the opacity */
+  transition: opacity .2s;
+}
+
+.next-track {
+  padding: 10px 20px 5px 20px; /*top right bottom left*/
+  width: auto;
+  height: auto;
+  opacity: 0.8;
+
+  /* Smoothly transition the opacity */
+  transition: opacity .2s;
+}
+
+.playpause-track:hover, .prev-track:hover, .next-track:hover {
+  opacity: 1.0;
+}
+
+.slider_container {
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 3px;
+  background: white;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.seek_slider:hover, .volume_slider:hover {
+  opacity: 1.0;
+}
+
+.seek_slider {
+  width: 60%;
+}
+
+.volume_slider {
+  width: 60%;
+}
+
+.current-time, .total-duration {
+  padding: 5px 5px 5px 5px; /*top right bottom left*/
+  font-size: 13px;
+}
+
+i.fa-volume-down, i.fa-volume-up {
+  padding: 10px;
+}
+
+i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+  cursor: pointer;
+}
+
+
+/*custom fonts*/
+
+@font-face {
+    font-family: 'virale';
+    src: url('../fonts/virale.ttf');
+}
+
+@font-face {
+    font-family: 'zeroweb';
+    src: url('../fonts/000webfont.ttf');
+}
+
+@font-face {
+    font-family: 'basiic';
+    src: url('../fonts/basiic.ttf');
+}
+
+@font-face {
+    font-family: 'Pulsewidth';
+    src: url('../fonts/Pulsewidth-1.0.0.otf');
+}
+
+@font-face {
+    font-family: 'heartfont';
+    src: url('../fonts/heartfont.ttf');
+}

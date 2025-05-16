@@ -1,0 +1,312 @@
+body {
+  background-image: url("../pics/sabg8.jpg");
+  color: #2f4c5d; /*font color*/
+  background-repeat: no-repeat;
+  background-size: auto;
+  font-family: 'basiic';
+  width: 1910px; 
+  height: 920px;
+  cursor: url(https://cur.cursors-4u.net/symbols/sym-3/sym249.ani), url(https://cur.cursors-4u.net/symbols/sym-3/sym249.png), auto !important; /* End https://www.cursors-4u.com */
+}
+
+.leftcolumn { 
+  float: left;
+  width: 140px;
+}
+.midcolumn { 
+  float: left;
+  width: 680px;
+}
+
+.rightcolumn { 
+  float: left;
+  width: 10%;
+  background-color: black;
+}
+
+.qucolumn {  
+  float: left;
+  width: 25%;
+  padding-top: 2px;
+}
+
+.halfcolumn {  
+  float: left;
+  width: 50%;
+  padding-top: 2px;
+}
+
+thirdcolumn {  
+  float: left;
+  width: 75%;
+  padding-top: 2px;
+  
+}
+
+.card { 
+  /*margin-top: 5px;*/
+  padding: 5px;
+  border: hidden;
+  border-bottom: 5px solid #020306;
+  background-color: black;
+  font-family: 'virale';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 600px;
+}
+.cardtwo { /* 2nd main box */ /*margin is outside border, padding is inside border*/
+  /*margin-top: 5px;*/
+  padding: 5px;
+  border: hidden;
+  background-color: black;
+  font-family: 'virale';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 300px;
+}
+
+.cardall { /* all boxes */
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'virale';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 900px;
+}
+
+.cardhm { /* hidden box inside main box w/ scroll*/
+  /*margin-top: 5px;*/
+  padding: 5px;
+  border: hidden;
+  border-left: 4px dotted #020306;
+  background-color: black;
+  font-family: 'virale';
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 400px;
+  scrollbar-color: #202430black;
+}
+.cardhd { /* hidden box inside main box*/
+  /*margin-top: 5px;*/
+  padding: 5px;
+  margin: 2px;
+  border: hidden;
+  background-color: black;
+  font-family: 'virale';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 500px;
+
+}
+
+.cardhds { /* hidden status box inside main box*/
+  /*margin-top: 5px;*/
+  padding: 5px;
+  border: hidden;
+  background-color: #020306;
+  font-family: 'virale';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 500px;
+
+}
+
+.cardr { /* right column  */
+  /*margin-top: 5px;*/
+  padding: 5px 5px 2px 5px; /*top right bottom left*/;
+  border: hidden;
+  background-color: black;
+  font-family: 'virale';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 750px;
+  /*scrollbar-color: #202430black;*/
+}
+
+.cardrb { /* right column  */
+  /*margin-top: 5px;*/
+  padding: 0px 5px 5px 5px; /*top right bottom left*/
+  border: hidden;
+  border-right: 4px solid #020306;
+  background-color: black;
+  font-family: 'virale';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 750px;
+  /*scrollbar-color: #202430black;*/
+}
+
+.cardl { /* left column  */
+  margin: 5px;
+  border: 4px ridge #020306;
+  background-color: black;
+  border-radius: 5px 5px 5px 5px;
+  font-family: 'basiic';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 800px;
+  width: 110px;
+  padding: 8px 4px 4px 8px; /*top right bottom left*/
+}
+
+.cardlt { /* top left column  */
+  margin-top: 10px;
+  padding: 0px 5px 5px 5px;
+  border-right: 4px solid #020306;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #020306;
+  font-family: 'basiic';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 800px;
+}
+
+.cardlm { /* left column card music */
+  /*margin-top: 5px;*/
+  border-radius: 5px;
+  border: hidden;
+  background-color: black;
+  font-family: 'virale';
+  overflow-y: hidden;
+  max-height: 700px;
+  padding: 2px;
+  scrollbar-color: #202430black;
+}
+
+
+.cardm { /* middle column small  */
+  /*margin-top: 5px;*/
+  padding: 10px;
+  border: hidden;
+  background-color: black;
+  font-family: 'virale';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 400px;
+}
+
+.cardms { /* middle column small  w/ scroll */
+  /*margin-top: 5px;*/
+  padding: 10px;
+  border: hidden;
+  border-left: 4px dotted #020306;
+  background-color: black;
+  font-family: 'virale';
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 300px;
+  scrollbar-color: #202430black;
+}
+
+.cards { /* subpage box */
+  padding: 5px;
+  margin: 5px;
+  border: 4px ridge #020306;
+  border-radius: 5px;
+  background-color: black;
+  font-family: 'basiic';
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 600px;
+  width: 600px;
+  scrollbar-color: #202430black;
+}
+
+.cardsindex { /* subpage box */
+  padding: 5px;
+  margin: 5px;
+  border: 4px ridge #020306;
+  border-radius: 5px;
+  background-color: black;
+  font-family: 'basiic';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: fit-content;
+  width: 600px;
+  scrollbar-color: #202430black;
+}
+
+.cardls { /* left column, subpages */
+  border: hidden;
+  background-color: black;
+  font-family: 'virale';
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 700px;
+  padding: 2px;
+}
+
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+    color: #2f4c5d;
+}
+
+a:visited {
+    color: #020306;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00db71
+}
+
+h4 {
+    color: white;
+    font-family: 'PLANB';
+    font-size: 32px;
+    margin: 5px 5px 10px 5px; /*top right bottom left*/
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+}
+
+h5 {
+    color: white;
+    margin: 2px 0px 3px 0px; /*top right bottom left*/
+    padding: 0px 0px 0px 0px;
+}
+
+p { 
+  margin: 10px 3px 10px 3px; /*top right bottom left*/
+  }
+  
+  h6 {
+    color: #020306;
+    margin: 2px 0px 3px 0px; /*top right bottom left*/
+    padding: 0px 0px 0px 0px;
+}  
+
+@font-face {
+    font-family: 'virale';
+    src: url('../fonts/virale.ttf');
+}
+
+@font-face {
+    font-family: 'Acrylic';
+    src: url('../fonts/Acrylic-1.0.0.otf');
+}
+
+@font-face {
+    font-family: 'basiic';
+    src: url('../fonts/basiic.ttf');
+}
+
+@font-face {
+    font-family: 'Pulsewidth';
+    src: url('../fonts/Pulsewidth-1.0.0.otf');
+}
+
+@font-face {
+    font-family: 'Heartfont';
+      src: url('../fonts/heartfont.ttf');
+}
+
+@font-face {
+    font-family: 'PLANB';
+      src: url('../fonts/PLANB.TTF');
+}
